@@ -1,0 +1,11 @@
+
+class UserImpl implements User{
+
+
+
+
+
+
+
+
+}
