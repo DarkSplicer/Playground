@@ -1,4 +1,4 @@
-package de.saar.chov.tommy.prog.model.interfaces;
+package jar.model.interfaces;
 
 public interface User{
 

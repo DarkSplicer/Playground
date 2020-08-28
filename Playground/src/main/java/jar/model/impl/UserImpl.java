@@ -1,99 +1,60 @@
-package de.saar.chov.tommy.prog.model.impl;
+package jar.model.impl;
 
-class UserImpl implements User{
+import jar.model.interfaces.User;
 
-    private String userId;
+public class UserImpl implements User{
+
+    private int userId;
     private String username;
     private String EmailAdress;
     private String passwort;
 
 
-    public UserImpl() {
-    }
-
-    public UserImpl(String userId, String username, String EmailAdress, String passwort) {
-        this.userId = userId;
-        this.username = username;
-        this.EmailAdress = EmailAdress;
-        this.passwort = passwort;
-    }
-
-    public String getUserId() {
+    @Override
+    public int getUserID() {
         return this.userId;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+    @Override
+    public void setUserID(int userID) {
+        // TODO Auto-generated method stub
 
-    public String getUsername() {
-        return this.username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getEmailAdress() {
-        return this.EmailAdress;
-    }
-
-    public void setEmailAdress(String EmailAdress) {
-        this.EmailAdress = EmailAdress;
-    }
-
-    public String getPasswort() {
-        return this.passwort;
-    }
-
-    public void setPasswort(String passwort) {
-        this.passwort = passwort;
-    }
-
-    public UserImpl userId(String userId) {
-        this.userId = userId;
-        return this;
-    }
-
-    public UserImpl username(String username) {
-        this.username = username;
-        return this;
-    }
-
-    public UserImpl EmailAdress(String EmailAdress) {
-        this.EmailAdress = EmailAdress;
-        return this;
-    }
-
-    public UserImpl passwort(String passwort) {
-        this.passwort = passwort;
-        return this;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (o == this)
-            return true;
-        if (!(o instanceof UserImpl)) {
-            return false;
-        }
-        UserImpl userImpl = (UserImpl) o;
-        return Objects.equals(userId, userImpl.userId) && Objects.equals(username, userImpl.username) && Objects.equals(EmailAdress, userImpl.EmailAdress) && Objects.equals(passwort, userImpl.passwort);
+    public String getUserName() {
+        // TODO Auto-generated method stub
+        return null;
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(userId, username, EmailAdress, passwort);
+    public void setUserName(String username) {
+        // TODO Auto-generated method stub
+
     }
 
     @Override
-    public String toString() {
-        return "{" +
-            " userId='" + getUserId() + "'" +
-            ", username='" + getUsername() + "'" +
-            ", EmailAdress='" + getEmailAdress() + "'" +
-            ", passwort='" + getPasswort() + "'" +
-            "}";
+    public String getEmailAddress() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void setEmailAddress(String emailaddress) {
+        // TODO Auto-generated method stub
+
+    }
+
+    @Override
+    public String getPassword() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void setPassword(String password) {
+        // TODO Auto-generated method stub
+
     }
 
 }

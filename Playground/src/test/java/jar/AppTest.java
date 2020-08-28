@@ -1,4 +1,4 @@
-package de.saar.chov.tommy.prog;
+package jar;
 
 import org.junit.jupiter.api.Test;
 

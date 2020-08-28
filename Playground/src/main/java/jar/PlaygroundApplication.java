@@ -1,10 +1,10 @@
-package de.saar.chov.tommy.prog;
+package jar;
 
 /**
  * Hello world!
  */
-public final class App {
-    private App() {
+public final class PlaygroundApplication {
+    private PlaygroundApplication() {
     }
 
     /**
