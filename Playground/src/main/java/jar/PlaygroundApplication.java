@@ -1,17 +1,17 @@
 package jar;
 
-/**
- * Hello world!
- */
-public final class PlaygroundApplication {
-    private PlaygroundApplication() {
-    }
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+/**
+ * 	The Main class. Starts the Application.
+ *
+ * @author Tommy Chov
+ */
+@SpringBootApplication
+public class PlaygroundApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PlaygroundApplication.class, args);
+	}
 }
