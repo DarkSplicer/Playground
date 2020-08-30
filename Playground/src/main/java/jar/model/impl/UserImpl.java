@@ -6,55 +6,38 @@ public class UserImpl implements User{
 
     private int userId;
     private String username;
-    private String EmailAdress;
     private String passwort;
 
 
     @Override
-    public int getUserID() {
+    public int getUserId() {
         return this.userId;
     }
 
     @Override
-    public void setUserID(int userID) {
-        // TODO Auto-generated method stub
-
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     @Override
-    public String getUserName() {
-        // TODO Auto-generated method stub
-        return null;
+    public String getUsername() {
+        return this.username;
     }
 
     @Override
-    public void setUserName(String username) {
-        // TODO Auto-generated method stub
-
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     @Override
-    public String getEmailAddress() {
-        // TODO Auto-generated method stub
-        return null;
+    public String getPasswort() {
+        return this.passwort;
     }
 
     @Override
-    public void setEmailAddress(String emailaddress) {
-        // TODO Auto-generated method stub
-
+    public void setPasswort(String passwort) {
+        this.passwort = passwort;
     }
 
-    @Override
-    public String getPassword() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public void setPassword(String password) {
-        // TODO Auto-generated method stub
-
-    }
 
 }
