@@ -1,4 +1,4 @@
-package jar.model.impl;
+package jar.model.classes;
 
 import java.util.Locale;
 

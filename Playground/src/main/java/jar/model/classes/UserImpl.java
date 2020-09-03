@@ -1,5 +1,6 @@
-package jar.model.impl;
+package jar.model.classes;
 
+import jar.model.interfaces.Role;
 import jar.model.interfaces.User;
 
 public class UserImpl implements User{
@@ -7,6 +8,13 @@ public class UserImpl implements User{
     private int userId;
     private String username;
     private String passwort;
+    private Role role;
+
+    public UserImpl(String name, String password, Role role) {
+		this.username = name;
+		this.passwort = password;
+		this.role = role;
+	}
 
 
     @Override
@@ -39,5 +47,12 @@ public class UserImpl implements User{
         this.passwort = passwort;
     }
 
+    public Role getRole() {
+        return this.role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
 
 }
