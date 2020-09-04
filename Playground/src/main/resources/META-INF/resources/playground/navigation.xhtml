@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Playground - Navigation</title>
+	<link rel="stylesheet" type="text/css" href="playground.css" />
+</h:head>
+
+<h:body>
+	<div class="wrapper">
+		<div id="logo"></div>
+
+		<h:form id="menu">
+
+			<h:link outcome="home" value="#{labels.buttonHome}"/>
+			<h:link outcome="aboutUs" value="#{labels.buttonAbout}"/>
+			<h:link outcome="home" value="#{labels.buttonImprint}"/>
+      <h:link outcome="login" value="#{labels.buttonLogin}"/>
+      <h:link outcome="test" value="language.xhtml"/>
+		</h:form>
+
+		<ui:include src="language.xhtml"/>
+
+	</div>
+
+</h:body>
+
+</html>
